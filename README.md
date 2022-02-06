@@ -6,16 +6,21 @@ Several configuration files depend on common settings. To ensure correct behavio
 variables to the .env file.
 
 ```
-AWS_SECRET_ACCESS_KEY=
-AWS_ACCESS_KEY_ID=
-AWS_ACCOUNT_ID=
-AWS_REGION=
+AWS_SECRET_ACCESS_KEY=abc
+AWS_ACCESS_KEY_ID=123
+AWS_ACCOUNT_ID=456
+AWS_REGION=us-east-2
 
-TF_VAR_account_id=
-TF_VAR_repository=
-TF_VAR_service=
-TF_VAR_region=
+TF_VAR_account_id=456
+TF_VAR_repository=demo-repository
+TF_VAR_service=demo-service
+TF_VAR_region=us-east-2
 ```
+
+Also make sure to provide the following policies to the IAM user used:
+- IAMFullAccess
+- AWSAppRunnerFullAccess
+- AmazonEC2ContainerRegistryFullAccess
 
 #### Setup ECR
 
