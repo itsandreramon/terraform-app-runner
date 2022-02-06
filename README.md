@@ -5,18 +5,6 @@ variables to the .env file. Also make sure that [Docker](https://www.docker.com/
 latest [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) is installed and
 configured.
 
-```
-AWS_SECRET_ACCESS_KEY=abc
-AWS_ACCESS_KEY_ID=123
-AWS_ACCOUNT_ID=456
-AWS_REGION=us-east-2
-
-TF_VAR_account_id=456
-TF_VAR_repository=demo-repository
-TF_VAR_service=demo-service
-TF_VAR_region=us-east-2
-```
-
 #### Make sure to provide the following policies to the IAM user used:
 
 - IAMFullAccess
