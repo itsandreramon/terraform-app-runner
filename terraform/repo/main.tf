@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_ecr_repository" "demo" {
+resource "aws_ecr_repository" "repository" {
   name                 = var.repository
   image_tag_mutability = "MUTABLE"
 
