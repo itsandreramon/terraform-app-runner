@@ -27,8 +27,6 @@ TF_VAR_region=us-east-2
 
 #### Setup ECR
 
-Make sure that the container registry is setup before uploading to it.
-
 ```
 $ terraform -chdir=terraform/repo init
 $ terraform -chdir=terraform/repo apply
